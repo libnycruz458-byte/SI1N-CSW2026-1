@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aula 04</title>
 </head>
+
 <body>
     <h1>Principais formatações</h1>
     <h2> Negrito/Destaque</h2>
@@ -12,15 +14,66 @@
     <p> Na frase uma <strong>parte do texto em negrito</strong> usando a tag Strong (com semantica) </p>
 
     <h2> Italico/ Enfase</h2>
-     <p>Nessa frase vamos entrar coma palavra em <i>italico</i> usando a tag i (Não semantica)</p>
+    <p>Nessa frase vamos entrar coma palavra em <i>italico</i> usando a tag i (Não semantica)</p>
     <p>Nessa frase vamos entrar coma palavra em <em> italico</em> usando a tag i (com semantica)</p>
 
     <h2>Texto Marcador</h2>
-    <p>Aqui vamos usar um texto com destaque <mark style="background-color: green;"> de marcador de texto</mark> usando mark</p>
-    <p>Aqui vamos usar um texto com destaque <mark > usando mark</mark></p>
+    <p>Aqui vamos usar um texto com destaque <mark style="background-color: green;"> de marcador de texto</mark> usando
+        mark</p>
+    <p>Aqui vamos usar um texto com destaque <mark> usando mark</mark></p>
 
     <h2>texto pequeno</h2>
-    <p> Estamos trabalhando aqui com um <small></small></p>
+    <p> Estamos trabalhando aqui com um <big>texto grande</big> e um <small>pequeno texto</small> </p>
+
+    <h2>Texto deletado</h2>
+    <p>Neste paragrafo vamos trabalhar com um texto <del>que foi deletado</del> da frase (forma semantica)</p>
+
+    <h2>Texto inserido</h2>
+    <p>Nesta frase vamos demonstar como <ins>destacar um texto inserido</ins> na frase de forma semantica</p>
+    <p>Nesta frase vamos demonstar como <u>destacar um texto inserido</u> na frase de forma não semantica</p>
+     
+    <h2>Texto subscrito</h2>
+    <p>Vamos demonstrar uma formula de equação do ax <sup>2</sup> +bx +c = 0</p>
+
+    <h2>Texto subescrito</h2>
+    <p>Vamos demontrar o texto subescrito comm a formula da agua H<sub>2</sub>O</p>
+
+    <h2>Trecho de codigo fonte</h2>
+
+    <pre>import cmath
+
+def resolver_equacao(a, b, c):
+    if a == 0:
+        return "O coeficiente 'a' deve ser diferente de zero."
+
+    delta = (b**2) - (4*a*c)
+
+    x1 = (-b + cmath.sqrt(delta)) / (2*a)
+    x2 = (-b - cmath.sqrt(delta)) / (2*a)
+
+    return delta, x1, x2
+
+a = 1
+b = -5
+c = 6
+
+print(f"Equação gerada: {a}x² + ({b})x + ({c}) = 0\n")
+
+resultado = resolver_equacao(a, b, c)
+
+if isinstance(resultado, tuple):
+    delta, raiz1, raiz2 = resultado
+    print(f"Valor de Delta: {delta}")
+    
+    if delta >= 0:
+        print(f"Raízes reais: x1 = {raiz1.real:.2f}, x2 = {raiz2.real:.2f}")
+    else:
+        print(f"Raízes complexas: x1 = {raiz1:.2f}, x2 = {raiz2:.2f}")
+else:
+    print(resultado)</pre>
+
+
 
 </body>
+
 </html>
