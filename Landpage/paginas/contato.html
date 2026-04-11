@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contatos</title>
+    <link rel="stylesheet" href="../css/styler.css">
+</head>
+
+<body>
+
+    <h1>FORMULÁRIO</h1>
+    <form action="#">
+        <table border="3">
+            <tr>
+                <td>Nome Completo:</td>
+                <td><input type="text" name="nome-usuario" placeholder="Digite o nome de usuário..."></td>
+            </tr>
+            <tr>
+                <td>E-mail pessoal:</td>
+                <td><input type="email" name="email1" id="idemail1" placeholder="Digite seu e-mail..."></td>
+            </tr>
+            <tr>
+                <td>Telefone:</td>
+                <td><input type="tel" name="Telefone" id="tel1" placeholder="Digite seu telefone..."></td>
+            </tr>
+
+            <tr>
+                <td><label for="">CNPJ/CPF:</label>
+                    <select name="Selecionar" size="1"><br>
+                        <option value="">Pessoa Física</option>
+                        <option value="">Pessoa Juridica</option>
+                    </select>
+                </td>
+                <td><input type="text" name="cnpj_cpf" placeholder=""> </td>
+            </tr>
+
+            <tr>
+                <td colspan="2" style="text-align: center;">Tipos de serviços : <br>
+                    <input type="checkbox" name="" id="">BackEnd <br>
+                    <input type="checkbox" name="" id="">FrontEnd <br>
+                    <input type="checkbox" name="" id="">Landpage
+                </td>
+
+            </tr>
+
+            <tr>
+                <td colspan="2">
+                    <label for="">Data e Hora de atendimento:</label>
+                    <input type="date" name="" id="">
+                    <input type="time" name="" id="">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2"><textarea name="comment" cols="40" rows="10" id=""
+                        placeholder="Breve descrição do que deseja contratar..."></textarea></td>
+            </tr>
+            <td><button onclick="enviar()">Enviar</button></td>
+            <td><button onclick="limparFm()">Limpar</button></td>
+
+        </table>
+        <a class="btnVoltar" href="./home.html">Voltar</a>
+    </form>
+    <script>
+        function enviar() {
+            alert("Formulário enviado")
+        }
+    </script>
+</body>
+
+</html>
