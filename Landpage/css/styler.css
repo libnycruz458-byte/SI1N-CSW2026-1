@@ -1,0 +1,126 @@
+
+:root {
+    --primary-color: #2b6777; /* Azul  */
+    --secondary-color: #c8d8e4;
+    --accent-color: #52ab98; /* Verde  */
+    --text-color: #2b2b2b;
+    --bg-color: #f2f2f2;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+    margin: 0;
+    padding: 20px;
+}
+
+h1, h2, h3 {
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--accent-color);
+    padding-bottom: 5px;
+}
+
+/* Menu de Navegação */
+.menu {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+    background: var(--primary-color);
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.menu li a:hover {
+    color: var(--secondary-color);
+}
+
+/* minha foto de perfil */
+.eu {
+    border-radius: 50%; /* Torna a imagem circular */
+    border: 5px solid var(--accent-color);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    margin: 20px 0;
+}
+
+/* Tabelas (Disciplinas e Hobbies) */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background: white;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+thead th {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Formulário de Contato */
+form table {
+    max-width: 600px;
+    border: none;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+input, select, textarea {
+    width: 90%;
+    padding: 8px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: var(--accent-color);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: var(--primary-color);
+}
+.botaozinho{
+     display: inline-block;
+    margin-top: 20px;
+    padding: 10px 15px;
+    background-color: var(--primary-color);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+
+}
+
+/* Botões de navegação */
+.btnservicos, .btncurriculo, .btnVoltar {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 15px;
+    background-color: var(--primary-color);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
