@@ -3,21 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>test</title>
+    <title>Aula-09</title>
 </head>
 <body>
+    <h1>Formulario</h1>
     <table border="3">
         <tr>
             <td>Nome:</td>
-            <td><input type="text" name="nome-usuario" placeholder="Digite o nome de usuário..."></td>
+            <td><input type="text" name="nome-usuario" placeholder="Digite o nome"></td>
         </tr>
         <tr>
             <td>E-mail pessoal:</td>
-            <td><input type="email" name="email1" id="idemail1" placeholder="Digite seu e-mail..."></td>
+            <td><input type="email" name="email1" id="idemail1" placeholder="Digite seu e-mail com @"></td>
         </tr>
         <tr>
             <td>E-mail (patter):</td>
-            <td><input type="email" name="email2" id="idemail2" placeholder="Digite seu e-mail..."></td>
+            <td><input type="email" name="email2" id="idemail2" placeholder="Digite seu e-mail com @"></td>
         </tr>
         <tr>
             <td>Senha:</td>
@@ -26,10 +27,10 @@
         </tr>
         <tr>
             <td>Idade:</td>
-            <td><input type="date" name="time" id="time-user" required></td>
+            <td><input type="number" name="number" id="" required></td>
         </tr>
         <tr>
-            <td><textarea name="comment" cols="40" rows="10" id="" placeholder="Deixe um comentário..."></textarea></td>
+            <td colspan="2"><textarea name="comment" cols="40" rows="10" id="" placeholder="Deixe um comentário..."></textarea></td>
         </tr>
         <tr>
             <td>Materia de interesse: <br>
@@ -37,44 +38,55 @@
             <input type="checkbox" name="" id="">FrontEnd <br>
             <input type="checkbox" name="" id="">FullStack</td>
             <td>Tipo de viagem: <br>
-            <input type="radio"> Negócios <br>
-            <input type="radio"> Lazer <br>
-            <input type="radio"> Turismo <br>
-            <input type="radio"> Acadêmico <br></td>
+            <input type="radio" id="opcao" name="opcao" value="Negócios"> Negócios <br>
+            <input type="radio" id="opcao" name="opcao" value="Lazer"> Lazer <br>
+            <input type="radio" id="opcao" name="opcao" value="Turismo"> Turismo <br>
+            <input type="radio" id="opcao" name="opcao" value="Acadêmico"> Acadêmico <br>
+        </td>
         </tr>
         <tr>
-            <td><label for="">Esporte Favorito: <br></label>
+            <td>
+                <label for="">Esporte Favorito: <br></label>
             <select name="Esporte" size="4"><br>
                 <option value="">Futebol</option>
                 <option value="">Basquete</option>
                 <option value="">Vôlei</option>
-                <option value="">Tênis</option></select></td>
-                <td><label for="">Investimentos:</label>
+                <option value="">Tênis</option></select>
+            </td>
+                <td>
+                    <label for="">Investimentos:</label>
             <select name="Esporte" size="1"><br>
                 <option value="">Poupança</option>
                 <option value="">CDB</option>
                 <option value="">Tesouro Direto</option>
                 <option value="">Fundos Imobiliários</option>
                 <option value="">CDI</option>
-                <option value="">DEBÊNTURES</option>
+                <option value="">Debêntures</option>
                 <option value="">Criptomoedas</option>
-                <option value="">Ações</option></select></td>
+                <option value="">Ações</option></select>
+            </td>
         </tr>
         <tr>
             <td><label for="cor">Escolha uma cor:
                 <input type="color" name="" id="">
             </label></td>
             <td><label for="">Escolha um arquivo:</label>
-            <input type="file"></td>
+            <input type="file">
+        </td>
         </tr>
         <tr>
             <td colspan="2">
                 <label for="">Data e Hora envio:</label>
-                <input type="date" name="" id="">
+                <input type="date" required>
+                <input type="time" name="" id="">
             </td>
         </tr>
-        <td><button>Enviar</button></td>
-        <td><button>Limpar</button></td>
+        <td>
+                 <input type="submit" value="Enviar">
+        </td>
+        <td>
+                 <input type="reset" value="Limpar">
+        </td>
     </table>
 </body>
 </html>
