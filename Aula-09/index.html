@@ -7,6 +7,7 @@
 </head>
 <body>
     <h1>Formulario</h1>
+    <form action="malito:exemplo@exemplo.com" method="post" enctype="text/plain">
     <table border="3">
         <tr>
             <td>Nome:</td>
@@ -34,36 +35,36 @@
         </tr>
         <tr>
             <td>Materia de interesse: <br>
-            <input type="checkbox" name="" id="">BackEnd <br>
-            <input type="checkbox" name="" id="">FrontEnd <br>
-            <input type="checkbox" name="" id="">FullStack</td>
+            <input type="checkbox" name="" id="checkbox1" value="1">BackEnd <br>
+            <input type="checkbox" name="" id="checkbox2" value="2">FrontEnd <br>
+            <input type="checkbox" name="" id="checkbox3" value="True">FullStack</td>
             <td>Tipo de viagem: <br>
-            <input type="radio" id="opcao" name="opcao" value="Negócios"> Negócios <br>
-            <input type="radio" id="opcao" name="opcao" value="Lazer"> Lazer <br>
-            <input type="radio" id="opcao" name="opcao" value="Turismo"> Turismo <br>
-            <input type="radio" id="opcao" name="opcao" value="Acadêmico"> Acadêmico <br>
+            <input type="radio" id="opcao1" name="opcao" value="Neg"> Negócios <br>
+            <input type="radio" id="opcao2" name="opcao" value="Laz"> Lazer <br>
+            <input type="radio" id="opcao3" name="opcao" value="Tur"> Turismo <br>
+            <input type="radio" id="opcao4" name="opcao" value="Acad"> Acadêmico <br>
         </td>
         </tr>
         <tr>
             <td>
                 <label for="">Esporte Favorito: <br></label>
             <select name="Esporte" size="4"><br>
-                <option value="">Futebol</option>
-                <option value="">Basquete</option>
-                <option value="">Vôlei</option>
-                <option value="">Tênis</option></select>
+                <option value="fut">Futebol</option>
+                <option value="bas">Basquete</option>
+                <option value="vol">Vôlei</option>
+                <option value="ten">Tênis</option></select>
             </td>
                 <td>
                     <label for="">Investimentos:</label>
-            <select name="Esporte" size="1"><br>
-                <option value="">Poupança</option>
-                <option value="">CDB</option>
-                <option value="">Tesouro Direto</option>
-                <option value="">Fundos Imobiliários</option>
-                <option value="">CDI</option>
-                <option value="">Debêntures</option>
-                <option value="">Criptomoedas</option>
-                <option value="">Ações</option></select>
+            <select name="investimentos" size="1"><br>
+                <option value="investimento1">Poupança</option>
+                <option value="investimento2">CDB</option>
+                <option value="investimento3">Tesouro Direto</option>
+                <option value="investimento4">Fundos Imobiliários</option>
+                <option value="investimento5">CDI</option>
+                <option value="investimento6">Debêntures</option>
+                <option value="investimento7">Criptomoedas</option>
+                <option value="investimento8">Ações</option></select>
             </td>
         </tr>
         <tr>
@@ -88,5 +89,7 @@
                  <input type="reset" value="Limpar">
         </td>
     </table>
+
+    </form>
 </body>
 </html>
