@@ -1,13 +1,35 @@
+@charset "UTF-8";
 
-.corpo{
-background-image: linear-gradient(#0664a4, #12a1e7,  #05b1bf, #8edef7, #ecfafd);
-font-family: Arial, Helvetica, sans-serif;
-
+*   {
+ 
+    font-family: Arial, Helvetica, sans-serif;
 }
+
+body   {
+    background-image: linear-gradient(90deg, #0869A6,#16B4F2,#0388A6);
+}
+
+main {
+    background-color: white;
+    box-shadow: 30px  30px  30px  #0869A6;    
+    width: 600px; 
+    padding: 50px;
+    margin: auto; 
+    border-radius: 15px;   
+    position: cent;
+    
+}
+
 h1  {
+    color: #0869A6;
     text-align: center;
-    color: #12a1e7;
-}
-p {
+    text-shadow: 1px 1px 1px #05528383;
 
+}
+h2  {
+    color: #0388A6;
+}
+
+p   {
+    text-align: justify;
 }
