@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculadora de Idade</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+   <div class="flex-container">
+        
+        <img src="baby.jpeg" alt="Logo Calculadora" class="imagemcalculadora">
+
+        <h2>CALCULADORA DE IDADE</h2>
+
+        <div class="campos-grupo">
+            <label for="diaNascimento">Dia: </label>
+            <input type="number" id="diaNascimento" placeholder="Dia" min="1" max="31" style="width: 65px;">
+            
+            <select id="mes">
+                <option value="0">Janeiro</option>
+                <option value="1">Fevereiro</option>
+                <option value="2">Março</option>
+                <option value="3">Abril</option>
+                <option value="4">Maio</option>
+                <option value="5">Junho</option>
+                <option value="6">Julho</option>
+                <option value="7">Agosto</option>
+                <option value="8">Setembro</option>
+                <option value="9">Outubro</option>
+                <option value="10">Novembro</option>
+                <option value="11">Dezembro</option>
+            </select>
+
+            <input type="number" id="ano" placeholder="Ex:1998" min="1900" max="2026" style="width: 65px;">
+        </div>
+
+        <button onclick="calcular()">Calcular</button>
+      
+    </div>
+      <p id="resultado-texto"></p>
+    <script src="script.js"></script>
+</body>
+</html>
